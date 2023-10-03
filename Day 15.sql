@@ -23,10 +23,9 @@
  
  insert into student_hobby values(1,'cricket');
   insert into student_hobby values(2,'tennis');
-  
  insert into student values(10,'tushar',1);
   insert into student values(11,'aman',2);
-
+  
   select * from student;
    select * from student_hobby;
    
@@ -51,9 +50,9 @@ select * from companies;
    
    alter table companies
 add column employee_count varchar(20) not null;
-   
-   -- alter--drop table-----------------------------
+ -- alter--drop table-----------------------------
    alter table companies drop employee_count;
+   
    -- rename table--------------------------
    rename table companies to newcompany;
    select * from newcompany;
@@ -81,6 +80,7 @@ select * from companies;
 -- set constraint
 alter table companies
 add primary key(id);
+
 desc companies;
 
 insert into companies values(10,1);
